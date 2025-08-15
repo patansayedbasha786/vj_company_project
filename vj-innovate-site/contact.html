@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - VJ Innovate Software Solutions</title>
+    <meta name="description" content="Get in touch with VJ Innovate Software Solutions for software development services, course inquiries, and internship applications.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e3a8a',
+                        secondary: '#f97316'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="assets/js/config.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <img src="assets/icons/logo.svg" alt="VJ Innovate Logo" class="h-10 w-10 mr-3">
+                    <span class="text-xl font-bold text-primary">VJ Innovate</span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="nav-link text-gray-700 hover:text-secondary px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="services.html" class="nav-link text-gray-700 hover:text-secondary px-3 py-2 rounded-md text-sm font-medium transition-colors">Services</a>
+                        <a href="courses.html" class="nav-link text-gray-700 hover:text-secondary px-3 py-2 rounded-md text-sm font-medium transition-colors">Courses</a>
+                        <a href="internship.html" class="nav-link text-gray-700 hover:text-secondary px-3 py-2 rounded-md text-sm font-medium transition-colors">Internship</a>
+                        <a href="contact.html" class="nav-link text-primary hover:text-secondary px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-secondary focus:outline-none">
+                        <i data-feather="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
+                <a href="index.html" class="nav-link block text-gray-700 hover:text-secondary px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="services.html" class="nav-link block text-gray-700 hover:text-secondary px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="courses.html" class="nav-link block text-gray-700 hover:text-secondary px-3 py-2 rounded-md text-base font-medium">Courses</a>
+                <a href="internship.html" class="nav-link block text-gray-700 hover:text-secondary px-3 py-2 rounded-md text-base font-medium">Internship</a>
+                <a href="contact.html" class="nav-link block text-primary hover:text-secondary px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-primary to-blue-800 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl font-bold mb-6 fade-in">Contact Us</h1>
+            <p class="text-xl text-blue-200 max-w-3xl mx-auto fade-in">Get in touch with us to start your journey in software development</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Information -->
+                <div class="fade-in">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Get in Touch</h2>
+                    <div class="w-24 h-1 bg-secondary mb-8"></div>
+                    <p class="text-lg text-gray-600 mb-8">We'd love to hear from you. Whether you have questions about our services, courses, or internship programs, our team is here to help.</p>
+                    
+                    <!-- Contact Details -->
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-start">
+                            <div class="bg-secondary p-3 rounded-lg mr-4 flex-shrink-0">
+                                <i data-feather="map-pin" class="h-6 w-6 text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-900 mb-1">Office Address</h3>
+                                <p class="text-gray-600" data-contact="address">123 Tech Street, Innovation Hub<br>Software City, State 12345<br>India</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-secondary p-3 rounded-lg mr-4 flex-shrink-0">
+                                <i data-feather="phone" class="h-6 w-6 text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-900 mb-1">Phone Numbers</h3>
+                                <p class="text-gray-600" data-contact="phone">+91 9440436178<br>+91 9440436178</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-secondary p-3 rounded-lg mr-4 flex-shrink-0">
+                                <i data-feather="mail" class="h-6 w-6 text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-900 mb-1">Email Addresses</h3>
+                                <p class="text-gray-600" data-contact="email">sksam3680@gmail.com<br>patansayedbasha786@gmail.com<br>internship@vjinnovate.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-secondary p-3 rounded-lg mr-4 flex-shrink-0">
+                                <i data-feather="clock" class="h-6 w-6 text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-900 mb-1">Business Hours</h3>
+                                <p class="text-gray-600" data-contact="business-hours">Monday - Friday: 9:00 AM - 7:00 PM<br>Saturday: 10:00 AM - 5:00 PM<br>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Links -->
+                    <div>
+                        <h3 class="font-bold text-gray-900 mb-4">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" data-social="facebook" class="bg-primary hover:bg-blue-700 text-white p-3 rounded-lg transition-colors">
+                                <i data-feather="facebook" class="h-5 w-5"></i>
+                            </a>
+                            <a href="#" data-social="twitter" class="bg-primary hover:bg-blue-700 text-white p-3 rounded-lg transition-colors">
+                                <i data-feather="twitter" class="h-5 w-5"></i>
+                            </a>
+                            <a href="#" data-social="linkedin" class="bg-primary hover:bg-blue-700 text-white p-3 rounded-lg transition-colors">
+                                <i data-feather="linkedin" class="h-5 w-5"></i>
+                            </a>
+                            <a href="#" data-social="instagram" class="bg-primary hover:bg-blue-700 text-white p-3 rounded-lg transition-colors">
+                                <i data-feather="instagram" class="h-5 w-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="fade-in">
+                    <div class="bg-gray-50 p-8 rounded-xl">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h3>
+                        
+                        <form action="https://formspree.io/f/mblkbzbl" method="POST" class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="firstName" class="block text-sm font-medium text-gray-700 mb-2">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent transition-colors">
+                                </div>
+                                <div>
+                                    <label for="lastName" class="block text-sm font-medium text-gray-700 mb-2">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent transition-colors">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent transition-colors">
+                            </div>
+                            
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent transition-colors">
+                            </div>
+                            
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Subject *</label>
+                                <select id="subject" name="subject" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent transition-colors">
+                                    <option value="">Select Subject</option>
+                                    <option value="services">Software Development Services</option>
+                                    <option value="courses">Course Inquiry</option>
+                                    <option value="internship">Internship Program</option>
+                                    <option value="partnership">Business Partnership</option>
+                                    <option value="support">Technical Support</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message *</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Please describe your inquiry in detail..." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent transition-colors"></textarea>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <input type="checkbox" id="consent" name="consent" required class="h-4 w-4 text-secondary focus:ring-secondary border-gray-300 rounded">
+                                <label for="consent" class="ml-2 block text-sm text-gray-700">
+                                    I agree to be contacted regarding my inquiry and consent to the processing of my personal data. *
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-secondary hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4 fade-in">Find Us</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 fade-in">Visit our office for in-person consultations and discussions</p>
+            </div>
+            
+            <div class="bg-white p-8 rounded-xl shadow-lg fade-in">
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe 
+                        data-contact="map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1841!2d-73.986!3d40.748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzUyLjgiTiA3M8KwNTknMDkuNiJX!5e0!3m2!1sen!2sus!4v1234567890"
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        class="rounded-lg">
+                    </iframe>
+                </div>
+                
+                <div class="mt-6 text-center">
+                    <p class="text-gray-600 mb-4">Can't find our office? Call us for directions!</p>
+                    <a href="tel:+919876543210" data-contact="phone-link" class="bg-secondary hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-block">
+                        <i data-feather="phone" class="h-5 w-5 inline mr-2"></i>Call for Directions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4 fade-in">Frequently Asked Questions</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 fade-in">Quick answers to common questions</p>
+            </div>
+            
+            <div class="space-y-6 fade-in">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">What services do you offer?</h3>
+                    <p class="text-gray-600">We offer comprehensive software development services including e-commerce development, web applications, mobile apps, and custom software solutions. We also provide programming courses and internship programs.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">How long are your courses?</h3>
+                    <p class="text-gray-600">Our courses range from 2 months to 6 months depending on the complexity and depth of the subject. We offer both part-time and full-time options to accommodate different schedules.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Do you provide job placement assistance?</h3>
+                    <p class="text-gray-600">Yes, we provide 100% placement assistance for our internship program graduates. We have partnerships with various companies and help with resume building, interview preparation, and job connections.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Can I take courses online?</h3>
+                    <p class="text-gray-600">We offer both in-person and online course options. Our online courses include live sessions, recorded lectures, and hands-on projects with mentor support.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">What are the prerequisites for your courses?</h3>
+                    <p class="text-gray-600">Prerequisites vary by course. Basic computer literacy is required for all courses. Some advanced courses may require prior programming experience. Check individual course descriptions for specific requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-6 fade-in">Ready to Get Started?</h2>
+            <p class="text-xl mb-8 text-blue-200 fade-in">Contact us today to discuss your requirements and take the first step towards your goals.</p>
+            <div class="space-x-4 fade-in">
+                <a href="tel:+919876543210" class="bg-secondary hover:bg-orange-600 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors inline-block">Call Now</a>
+                <a href="mailto:info@vjinnovate.com" class="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-3 rounded-lg text-lg font-semibold transition-colors inline-block">Email Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2025 VJ Innovate Software Solutions Pvt Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        feather.replace();
+        
+        // Handle contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Simple validation
+            if (!data.consent) {
+                alert('Please provide consent to process your personal data');
+                return;
+            }
+            
+            // Show success message
+            alert('Thank you for your message! We will get back to you within 24 hours.');
+            
+            // Reset form
+            this.reset();
+        });
+    </script>
+</body>
+</html>
